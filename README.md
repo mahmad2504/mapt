@@ -19,7 +19,8 @@ On success you should see a bash shell terminal root@a7b6f188bfc7:/hostdir#
 Add/Update debian/ubuntu repositories in suites.json file and make sure that it is syntactically correct (u can use any online json parser to verify json data)
 for example https://jsonlint.com/
 
-Respositories are listed as array of json objects where ach object represents a single repository which will be scanned (See suites.json file which is provded as sample)
+Respositories are listed as array of json objects where each object represents a single repository which will be scanned (See suites.json file which is provded as sample)
+
 Respository json objcts has following attributes
 
 * "url" : "http://de.archive.ubuntu.com/ubuntu/"    - Public url to the respository     
