@@ -12,6 +12,8 @@ sudo docker build -t "mydebian:latest" .
 ### Run docker image
 sudo docker run -it --rm  -w /hostdir -v ${PWD}:/hostdir mydebian  
 
+On success you should see a bash shell terminal root@a7b6f188bfc7:/hostdir# 
+
 ### Configure repositories
 
 Update debian/ubuntu rpositories in suites.json file and make sure that it is syntactically correct (u can use any online json parser to verify json data)
