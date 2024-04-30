@@ -35,6 +35,8 @@ Respository json objcts has following attributes
 ### Search a packahe
 ./search samba 
 
+### Output
+
 | Package |             Version             |         Suite          | Arch  |
 |---------|---------------------------------|------------------------|-------|
 | samba   | 2:4.1.6+dfsg-1ubuntu2           | ubuntu:trusty          | i386  |
