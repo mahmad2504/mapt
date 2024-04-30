@@ -23,12 +23,12 @@ Respositories are listed as array of json objects where each object represents a
 
 Respository json objcts has following attributes
 
-* "url" : "http://de.archive.ubuntu.com/ubuntu/"    - Public url to the respository     
-* "distribution" : "trusty"                         - Distrbution Name
-* "components" : ["main"],                          - components to include like main, contrib, non-free
-* "sources" : true,                                 - true means you are interested in source packages too (deb-src)
-* "arch" : [ "i386", "amd64" ]                      - Architecture in which you are interested
-* skip" : true                                     - If true, this entry will be skipped by the tool
+* url : http://de.archive.ubuntu.com/ubuntu/    - Public url to the respository     
+* distribution : trusty                         - Distrbution Name
+* components : ["main"],                        - Array of components  like main, contrib, non-free
+* sources : true,                               - true means you are interested in source packages too (deb-src)
+* arch : [ "i386", "amd64" ]                    - Array of architecture in which you are interested
+* skip : true                                   - Optional, If set to true, this entry will be skipped by the tool
 
 
 
