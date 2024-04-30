@@ -6,10 +6,11 @@ git clone https://github.com/mahmad2504/mapt.git
 
 ### Build docker image 
 Change directory to folder where you have cloned the code and build docker image first
+
 sudo docker build -t "mydebian:latest" .
 
 ### Run docker image
-docker run -it --rm  -w /hostdir -v ${PWD}:/hostdir mydebian  
+sudo docker run -it --rm  -w /hostdir -v ${PWD}:/hostdir mydebian  
 
 ### Configure repositories
 
