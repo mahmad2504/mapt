@@ -32,7 +32,7 @@ Respository json objcts has following attributes
 
 
 
-### Search a packahe
+### Search a package
 ./search samba 
 
 ### Output
