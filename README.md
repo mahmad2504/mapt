@@ -22,12 +22,12 @@ for example https://jsonlint.com/
 Respositories are listed as array of json objects where ach object represents a single repository which will be scanned (See suites.json file which is provded as sample)
 Respository json objcts has following attributes
 
-. "url" : "http://de.archive.ubuntu.com/ubuntu/"    - Public url to the respository     
-. "distribution" : "trusty"                         - Distrbution Name
-. "components" : ["main"],                          - components to include like main, contrib, non-free
-. "sources" : true,                                 - true means you are interested in source packages too (deb-src)
-. "arch" : [ "i386", "amd64" ]                      - Architecture in which you are interested
-. skip" : true                                     - If true, this entry will be skipped by the tool
+* "url" : "http://de.archive.ubuntu.com/ubuntu/"    - Public url to the respository     
+* "distribution" : "trusty"                         - Distrbution Name
+* "components" : ["main"],                          - components to include like main, contrib, non-free
+* "sources" : true,                                 - true means you are interested in source packages too (deb-src)
+* "arch" : [ "i386", "amd64" ]                      - Architecture in which you are interested
+* skip" : true                                     - If true, this entry will be skipped by the tool
 
 
 
