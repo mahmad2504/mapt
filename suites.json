@@ -1,0 +1,33 @@
+[
+   {
+      "url" : "http://de.archive.ubuntu.com/ubuntu/",
+      "distribution" : "trusty",
+      "components" : ["main"],
+      "sources" : true,
+      "arch" : [ "i386", "amd64" ]
+   },
+   {
+      "url" : "http://de.archive.ubuntu.com/ubuntu/",
+      "distribution" : "trusty-security",
+      "components" : ["main"],
+      "sources" : true,
+      "arch" : [ "i386", "amd64" ]
+   },
+   {
+      "url" : "http://deb.debian.org/debian/",
+      "distribution" : "bullseye",
+      "components" : ["main","contrib","non-free"],
+      "sources" : true,
+      "arch" : [ "amd64","i386" ],
+	  "skip" : true
+   },
+   {
+      "url" : "http://deb.debian.org/debian/",
+      "distribution" : "bookworm-updates",
+      "components" : ["main"],
+      "sources" : true,
+      "arch" : [ "i386", "amd64" ],
+      "skip" : true
+   }
+]
+

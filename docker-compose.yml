@@ -1,0 +1,54 @@
+version: '3.7'
+services:
+  debian:
+    build: 
+        context: ./
+        dockerfile: Dockerfile
+    image: mydebian:latest
+    stdin_open: true
+    tty: true 
+    working_dir: /hostdir
+    volumes:
+      - './hostdir:/hostdir'
+    entrypoint: ["bash"]
+    
+  osstracker:
+    build: 
+        context: ./
+        dockerfile: Dockerfile
+    image: mydebian:latest
+    stdin_open: true
+    tty: true 
+    working_dir: /hostdir
+    volumes:
+      - './osstracker:/hostdir'
+    entrypoint: ["bash"]
+    
+  aws:
+    build: 
+        context: ./
+        dockerfile: Dockerfile
+    image: mydebian:latest
+    stdin_open: true
+    privileged: true
+    tty: true 
+    working_dir: /hostdir
+    volumes:
+      - './:/hostdir'
+    entrypoint: ["./awsstart.sh"]
+  isar2sbom:
+    build: 
+        context: ./
+        dockerfile: Dockerfile
+    image: mydebian:latest
+    stdin_open: true
+    privileged: true
+    tty: true 
+    working_dir: /isar2sbom
+    volumes:
+      - './:/isar2sbom'
+    entrypoint: ["./script.sh"]
+
+
+      
+      
